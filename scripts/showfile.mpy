@@ -1,0 +1,8 @@
+from mystic_bbs import *
+show_file = param_str(1)
+writeln("|CL")
+with open(show_file) as f:
+    for line in f:
+        write(line)
+writeln("Press any key to continue")
+getkey()
